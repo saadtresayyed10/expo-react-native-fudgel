@@ -16,7 +16,7 @@ const HomeScreen = () => {
       </View>
       <View className="flex justify-center items-center gap-y-4 flex-col w-full mt-[200px]">
         <Link
-          href="/"
+          href="/login"
           className="bg-neutral-800 text-neutral-100 px-10 py-3 rounded-lg w-full text-center"
         >
           <Text className="text-2xl font-medium">Login</Text>
