@@ -8,37 +8,46 @@ import {
 import { ThemedView } from "@/components/ThemedView";
 import { Link } from "expo-router";
 
-const RegisterScreen = () => {
+const OTPVerifyScreen = () => {
   return (
     <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}>
       <ThemedView className="flex justify-center items-center w-full min-h-screen flex-col gap-y-4 p-6 mt-[60px]">
         <View className="flex justify-start items-start gap-y-4 flex-col">
           <Text className="text-4xl font-bold uppercase text-black tracking-wide">
-            Sign Up To Fudgel
+            OTP Verification
           </Text>
           <Text className="text-base font-medium text-neutral-500">
-            Fudgel is your go-to to-do app for effortlessly managing daily tasks
-            with just a click. Sign up or log in to get started!
+            Enter the OTP sent to your whatsapp mobile number to verify your
+            account.
           </Text>
         </View>
-        <View className="flex flex-row justify-center items-center border-2 border-neutral-700 px-8 py-2 rounded-lg w-full gap-x-2 mt-[200px]">
-          <Text className="text-xl text-black leading-none">+91:</Text>
+        <View className="flex flex-row justify-center items-center px-8 py-2 w-full gap-x-6 mt-[200px]">
           <TextInput
-            className="flex-1 text-xl placeholder:text-neutral-400 ml-2 mt-1 py-2 leading-none"
-            placeholder="Enter Number"
+            className="py-4 px-6 border-2 border-neutral-700 rounded-lg"
             keyboardType="numeric"
-            textAlignVertical="center"
+          />
+          <TextInput
+            className="py-4 px-6 border-2 border-neutral-700 rounded-lg"
+            keyboardType="numeric"
+          />
+          <TextInput
+            className="py-4 px-6 border-2 border-neutral-700 rounded-lg"
+            keyboardType="numeric"
+          />
+          <TextInput
+            className="py-4 px-6 border-2 border-neutral-700 rounded-lg"
+            keyboardType="numeric"
           />
         </View>
         <Link
-          href="/otp"
+          href="/create-acc"
           className="bg-neutral-800 text-neutral-100 px-10 py-3 rounded-lg w-full text-center"
         >
-          <Text className="text-2xl font-medium">Send OTP</Text>
+          <Text className="text-2xl font-medium">Create Account</Text>
         </Link>
       </ThemedView>
     </TouchableWithoutFeedback>
   );
 };
 
-export default RegisterScreen;
+export default OTPVerifyScreen;
