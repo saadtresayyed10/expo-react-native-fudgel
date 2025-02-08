@@ -39,7 +39,7 @@ const LoginScreen = () => {
           />
         </View>
         <Link
-          href="/"
+          href="/fetch-items"
           className="bg-neutral-800 text-neutral-100 px-10 py-3 rounded-lg w-full text-center mt-6"
         >
           <Text className="text-2xl font-medium">Login</Text>

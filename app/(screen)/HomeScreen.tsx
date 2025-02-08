@@ -3,7 +3,7 @@ import { Link } from "expo-router";
 
 const HomeScreen = () => {
   return (
-    <View className="flex justify-center items-center w-full min-h-screen flex-col gap-y-10 p-6 bg-white dark:bg-white">
+    <View className="flex justify-center items-center w-full min-h-screen flex-col gap-y-10 p-6 bg-white dark:bg-white border">
       <View className="flex justify-start items-start flex-col gap-y-2 w-full mt-10">
         <Text className="text-6xl font-bold uppercase text-black tracking-wide">
           Welcome to Fudgel

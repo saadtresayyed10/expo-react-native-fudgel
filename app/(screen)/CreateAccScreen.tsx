@@ -6,7 +6,25 @@ import {
   TouchableWithoutFeedback,
 } from "react-native";
 import { Link } from "expo-router";
-import { formElements } from "../create-acc";
+
+const formElements = [
+  {
+    label: "Name",
+    placeholder: "Saad Sayyed",
+  },
+  {
+    label: "Email",
+    placeholder: "saad@gmail.com",
+  },
+  {
+    label: "Password",
+    placeholder: "*****************",
+  },
+  {
+    label: "Confirm Password",
+    placeholder: "*****************",
+  },
+];
 
 const CreateAccScreen = () => {
   return (
@@ -38,7 +56,7 @@ const CreateAccScreen = () => {
           </View>
         ))}
         <Link
-          href="/"
+          href="/fetch-items"
           className="bg-neutral-800 text-neutral-100 px-10 py-3 rounded-lg w-full text-center mt-6"
         >
           <Text className="text-2xl font-medium">Sign Up</Text>
