@@ -5,13 +5,12 @@ import {
   Keyboard,
   TouchableWithoutFeedback,
 } from "react-native";
-import { ThemedView } from "@/components/ThemedView";
 import { Link } from "expo-router";
 
 const LoginScreen = () => {
   return (
     <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}>
-      <ThemedView className="flex justify-center items-center w-full min-h-screen flex-col gap-y-4 p-6 mt-[60px]">
+      <View className="flex justify-center items-center w-full min-h-screen flex-col gap-y-4 p-6 mt-[60px] bg-white dark:bg-white">
         <View className="flex justify-start items-start gap-y-4 flex-col mb-[60px]">
           <Text className="text-4xl font-bold uppercase text-black tracking-wide">
             Welcome Back User
@@ -45,7 +44,7 @@ const LoginScreen = () => {
         >
           <Text className="text-2xl font-medium">Login</Text>
         </Link>
-      </ThemedView>
+      </View>
     </TouchableWithoutFeedback>
   );
 };

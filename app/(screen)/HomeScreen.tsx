@@ -1,10 +1,9 @@
 import { View, Text } from "react-native";
-import { ThemedView } from "@/components/ThemedView";
 import { Link } from "expo-router";
 
 const HomeScreen = () => {
   return (
-    <ThemedView className="flex justify-center items-center w-full min-h-screen flex-col gap-y-10 p-6">
+    <View className="flex justify-center items-center w-full min-h-screen flex-col gap-y-10 p-6 bg-white dark:bg-white">
       <View className="flex justify-start items-start flex-col gap-y-2 w-full mt-10">
         <Text className="text-6xl font-bold uppercase text-black tracking-wide">
           Welcome to Fudgel
@@ -28,7 +27,7 @@ const HomeScreen = () => {
           <Text className="text-2xl font-medium">Register</Text>
         </Link>
       </View>
-    </ThemedView>
+    </View>
   );
 };
 
